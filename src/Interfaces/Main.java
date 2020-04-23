@@ -57,7 +57,6 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         FileBrowseButton = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         selectedPathField = new javax.swing.JTextField();
@@ -73,63 +72,65 @@ public class Main extends javax.swing.JFrame {
         InheritanceCheckBox = new javax.swing.JCheckBox();
         CouplingCheckBox = new javax.swing.JCheckBox();
         ControlStructureCheckBox = new javax.swing.JCheckBox();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(204, 204, 255));
+        setForeground(new java.awt.Color(204, 204, 255));
         setMaximumSize(new java.awt.Dimension(1000, 800));
+        setResizable(false);
         setSize(new java.awt.Dimension(1200, 800));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        jLabel1.setText("Code Complexity Tool");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 30, -1, -1));
-
-        FileBrowseButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        FileBrowseButton.setText("Browse");
+        FileBrowseButton.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        FileBrowseButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/button.png"))); // NOI18N
+        FileBrowseButton.setBorder(null);
         FileBrowseButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 FileBrowseButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(FileBrowseButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 140, -1, -1));
+        getContentPane().add(FileBrowseButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 120, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel2.setText("Select the Java file for evaluation");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, -1, -1));
 
         selectedPathField.setEditable(false);
-        selectedPathField.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        selectedPathField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         selectedPathField.setText("Selected Fiile Path");
-        getContentPane().add(selectedPathField, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, 770, -1));
+        getContentPane().add(selectedPathField, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 770, -1));
 
         filNameField.setEditable(false);
-        filNameField.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        filNameField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         filNameField.setText("File Name");
-        getContentPane().add(filNameField, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 260, 770, -1));
+        getContentPane().add(filNameField, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, 770, -1));
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel3.setText("Selected File Type :");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 330, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 230, -1, -1));
 
-        FileTypeLabel.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        FileTypeLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         FileTypeLabel.setText("--");
-        getContentPane().add(FileTypeLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 330, -1, -1));
+        getContentPane().add(FileTypeLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 230, -1, -1));
 
         CodeViewer.setColumns(20);
         CodeViewer.setRows(5);
         jScrollPane1.setViewportView(CodeViewer);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 390, 770, 330));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 260, 770, 330));
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel4.setText("Number of Lines :");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 330, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 230, -1, -1));
 
-        NumOfLines.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        NumOfLines.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         NumOfLines.setText("--");
-        getContentPane().add(NumOfLines, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 330, -1, -1));
+        getContentPane().add(NumOfLines, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 230, -1, -1));
 
-        AnalyzeButton.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        AnalyzeButton.setText("Analyze");
+        AnalyzeButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        AnalyzeButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Analyze.png"))); // NOI18N
+        AnalyzeButton.setBorder(null);
         AnalyzeButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 AnalyzeButtonMouseEntered(evt);
@@ -143,23 +144,26 @@ public class Main extends javax.swing.JFrame {
                 AnalyzeButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(AnalyzeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 780, -1, -1));
+        getContentPane().add(AnalyzeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 600, 140, 40));
 
-        svmCheckBox.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        svmCheckBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         svmCheckBox.setText("Size , Variables and Method");
-        getContentPane().add(svmCheckBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 740, -1, -1));
+        getContentPane().add(svmCheckBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 600, -1, -1));
 
-        InheritanceCheckBox.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        InheritanceCheckBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         InheritanceCheckBox.setText("Inheritance");
-        getContentPane().add(InheritanceCheckBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 740, -1, -1));
+        getContentPane().add(InheritanceCheckBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 600, -1, -1));
 
-        CouplingCheckBox.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        CouplingCheckBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         CouplingCheckBox.setText("Coupling");
-        getContentPane().add(CouplingCheckBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 790, -1, -1));
+        getContentPane().add(CouplingCheckBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 650, -1, -1));
 
-        ControlStructureCheckBox.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        ControlStructureCheckBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         ControlStructureCheckBox.setText("Control Structures");
-        getContentPane().add(ControlStructureCheckBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 790, -1, -1));
+        getContentPane().add(ControlStructureCheckBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 650, -1, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/LogoMakr_21HAUn.png"))); // NOI18N
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -342,10 +346,10 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JCheckBox InheritanceCheckBox;
     private javax.swing.JLabel NumOfLines;
     private javax.swing.JTextField filNameField;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField selectedPathField;
     private javax.swing.JCheckBox svmCheckBox;

@@ -266,43 +266,44 @@ public class AnalyzerForm extends javax.swing.JFrame {
         CcsLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Poppins", 0, 36)); // NOI18N
         jLabel1.setText("Analyzer Form");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 60, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jLabel2.setText("Number of Inheritance :");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 230, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
 
-        ComplexityLabel.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        ComplexityLabel.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         ComplexityLabel.setText("--");
-        getContentPane().add(ComplexityLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 190, -1, -1));
+        getContentPane().add(ComplexityLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 80, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jLabel3.setText("Size Complexity :");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 230, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 120, -1, -1));
 
-        KeyWordAnalyzerLabel.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        KeyWordAnalyzerLabel.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         KeyWordAnalyzerLabel.setText("--");
-        getContentPane().add(KeyWordAnalyzerLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 190, -1, -1));
+        getContentPane().add(KeyWordAnalyzerLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 80, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jLabel4.setText("Code Complexity :");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 190, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, -1));
 
-        InheritanceLabel.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        InheritanceLabel.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         InheritanceLabel.setText("--");
-        getContentPane().add(InheritanceLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 230, -1, -1));
+        getContentPane().add(InheritanceLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, -1, -1));
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jLabel5.setText("Key-Word Usage :");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 190, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 80, -1, -1));
 
-        SizeLabel.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        SizeLabel.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         SizeLabel.setText("--");
-        getContentPane().add(SizeLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 230, -1, -1));
+        getContentPane().add(SizeLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 120, -1, -1));
 
         jTabbedPane1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
@@ -527,7 +528,7 @@ public class AnalyzerForm extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Control Stuctures", jPanel4);
 
-        getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, 790, 370));
+        getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 790, 370));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

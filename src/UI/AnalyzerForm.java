@@ -495,13 +495,13 @@ public class AnalyzerForm extends javax.swing.JFrame {
         getContentPane().add(CsLabelValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, -1, -1));
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton1.setText("Back");
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/back.png"))); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 50, 150, 60));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 60, 120, 40));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/LogoMakr_21HAUn.png"))); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 490, 110));

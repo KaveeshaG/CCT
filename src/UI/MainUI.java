@@ -90,6 +90,7 @@ public class MainUI extends javax.swing.JFrame {
         });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/LogoMakr_21HAUn.png"))); // NOI18N
 
@@ -129,8 +130,9 @@ public class MainUI extends javax.swing.JFrame {
         CodeViewer.setRows(5);
         jScrollPane1.setViewportView(CodeViewer);
 
+        AnalyzeButton.setBackground(new java.awt.Color(255, 51, 51));
         AnalyzeButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        AnalyzeButton.setText("Proceed");
+        AnalyzeButton.setText("Calculate");
         AnalyzeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AnalyzeButtonActionPerformed(evt);
@@ -218,7 +220,7 @@ public class MainUI extends javax.swing.JFrame {
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(selectedPathField)
                                 .addComponent(filNameField)))))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

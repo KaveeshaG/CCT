@@ -5,7 +5,7 @@
  */
 package tool;
 
-import Interfaces.Main;
+import UI.MainUI;
 
 /**
  *
@@ -17,7 +17,7 @@ public class Tool {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Main mn = new Main();
+        MainUI mn = new MainUI();
         mn.setVisible(true);
     }
     

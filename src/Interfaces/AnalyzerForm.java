@@ -264,6 +264,7 @@ public class AnalyzerForm extends javax.swing.JFrame {
         CcsppsLabel = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
         CcsLabel = new javax.swing.JLabel();
+        back = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -530,8 +531,22 @@ public class AnalyzerForm extends javax.swing.JFrame {
 
         getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 790, 370));
 
+        back.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/back.png"))); // NOI18N
+        back.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                backMouseClicked(evt);
+            }
+        });
+        getContentPane().add(back, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 20, -1, -1));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void backMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backMouseClicked
+        // TODO add your handling code here:
+        new AnalyzerForm().setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_backMouseClicked
 
     /**
      * @param args the command line arguments
@@ -604,6 +619,7 @@ public class AnalyzerForm extends javax.swing.JFrame {
     private javax.swing.JLabel WslLabel;
     private javax.swing.JLabel WtcsLabel;
     private javax.swing.JLabel WvsLabel;
+    private javax.swing.JLabel back;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

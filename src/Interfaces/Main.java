@@ -90,23 +90,23 @@ public class Main extends javax.swing.JFrame {
                 FileBrowseButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(FileBrowseButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 120, -1, -1));
+        getContentPane().add(FileBrowseButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 130, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jLabel2.setText("Select the Java file for evaluation");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, -1, -1));
 
         selectedPathField.setEditable(false);
-        selectedPathField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        selectedPathField.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         selectedPathField.setText("Selected Fiile Path");
         getContentPane().add(selectedPathField, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 770, -1));
 
         filNameField.setEditable(false);
-        filNameField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        filNameField.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         filNameField.setText("File Name");
         getContentPane().add(filNameField, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, 770, -1));
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jLabel3.setText("Selected File Type :");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 230, -1, -1));
 
@@ -120,7 +120,7 @@ public class Main extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 260, 770, 330));
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jLabel4.setText("Number of Lines :");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 230, -1, -1));
 
@@ -146,19 +146,19 @@ public class Main extends javax.swing.JFrame {
         });
         getContentPane().add(AnalyzeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 600, 140, 40));
 
-        svmCheckBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        svmCheckBox.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         svmCheckBox.setText("Size , Variables and Method");
         getContentPane().add(svmCheckBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 600, -1, -1));
 
-        InheritanceCheckBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        InheritanceCheckBox.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         InheritanceCheckBox.setText("Inheritance");
         getContentPane().add(InheritanceCheckBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 600, -1, -1));
 
-        CouplingCheckBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        CouplingCheckBox.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         CouplingCheckBox.setText("Coupling");
         getContentPane().add(CouplingCheckBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 650, -1, -1));
 
-        ControlStructureCheckBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        ControlStructureCheckBox.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         ControlStructureCheckBox.setText("Control Structures");
         getContentPane().add(ControlStructureCheckBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 650, -1, -1));
 
